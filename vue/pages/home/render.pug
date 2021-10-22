@@ -1,7 +1,13 @@
 .container-fluid.px-0
   nav.navbar.navbar-dark.bg-dark
     .navbar-brand.d-flex
-      div Webtool Template
+      div Webtool Cropper
   .container-fluid.px-0
+    button.btn.btn-primary(@click="crop") 裁切
     b-card(no-body)
-      b-card-body template
+      b-card-body
+        .row
+          .col-6
+            img(ref="image" src="./lena.png")
+          .col-6.d-flex.justify-content-center
+            img.m-auto(v-if="outputUrl" :src="outputUrl")
