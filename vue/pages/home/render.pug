@@ -2,12 +2,13 @@
   nav.navbar.navbar-dark.bg-dark
     .navbar-brand.d-flex
       div Webtool Cropper
+      open-image.ml-1.mb-0(@load="loadImg") 上傳
   .container-fluid.px-0
     button.btn.btn-primary(@click="crop") 裁切
     b-card(no-body)
       b-card-body
         .row
           .col-6
-            img(ref="image" src="./lena.png")
+            img.mw-100(ref="image" src="./lena.png")
           .col-6.d-flex.justify-content-center
-            img.m-auto(v-if="outputUrl" :src="outputUrl")
+            img.mw-100.m-auto(v-if="outputUrl" :src="outputUrl")

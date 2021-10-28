@@ -1,0 +1,4 @@
+.d-inline-block(v-if="id")
+  input.d-none(:id ="id" type="file" accept="image/*" @change="parseFile")
+  label.btn.btn-secondary.btn-sm.mb-0(:for="id")
+    b-icon-card-image

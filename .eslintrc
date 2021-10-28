@@ -1,7 +1,7 @@
 {
   "extends": "standard",
-  "parser": "eslint-parser",
   "parserOptions": {
+    "parser": "eslint-parser",
     "allowImportExportEverywhere": true
   }
 }

@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/josudoey/webtool-cropper#readme",
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
+    "esprima": "^4.0.1",
     "eslint": "^8.0.1",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.2",
