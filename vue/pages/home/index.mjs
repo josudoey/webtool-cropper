@@ -31,7 +31,7 @@ export default {
       const Cropper = CropperModule.default
       this.cropper = new Cropper(this.$refs.image, {
         viewMode: 1,
-        dragMode: 'none',
+        dragMode: 'move',
         minCropBoxWidth: 256,
         minCropBoxHeight: 256,
         aspectRatio: 1,
