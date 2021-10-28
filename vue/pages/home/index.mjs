@@ -23,7 +23,6 @@ export default {
     loadImg (img) {
       this.cropper.destroy()
       this.$refs.image.src = img.src
-      console.log(img.src)
       this.initCropper()
     },
     async initCropper () {
